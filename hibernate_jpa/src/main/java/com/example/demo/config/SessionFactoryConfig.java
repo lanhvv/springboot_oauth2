@@ -3,11 +3,14 @@
 //import jakarta.persistence.EntityManagerFactory;
 //import org.hibernate.SessionFactory;
 //import org.springframework.context.annotation.Bean;
+//import org.springframework.context.annotation.Configuration;
+//import org.springframework.core.Ordered;
+//import org.springframework.core.annotation.Order;
 //
-//@org.springframework.context.annotation.Configuration
+//@Configuration
 //public class SessionFactoryConfig {
 //
-//
+//    @Order(Ordered.LOWEST_PRECEDENCE)
 //    @Bean
 //    public SessionFactory initSessionFactory(EntityManagerFactory factory) {
 //        if (factory.unwrap(SessionFactory.class) == null) {
